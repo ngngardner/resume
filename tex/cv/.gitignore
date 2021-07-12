@@ -1,3 +1,4 @@
 *
 !.gitignore
-!cv.tex
+!*.tex
+!*.pdf
