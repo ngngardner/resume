@@ -1,0 +1,25 @@
+# .github/workflows/main.yml
+
+name: Github Pages Publish
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: git checkout
+        uses: actions/checkout@v2.3.4
+      - name: install nix
+        uses: cachix/install-nix-action@v13
+        with:
+          nix_path: nixpkgs=channel:release-21.05
+      - name: build
+        run: nix-build
+      - uses: sterlingwes/gh-pages-deploy-action@v1.1
+        with:
+          access-token: ${{ secrets.ACCESS_TOKEN }}
+          source-directory: result
