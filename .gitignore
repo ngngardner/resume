@@ -1,0 +1,9 @@
+# tex
+texput.log
+
+# npm
+node-packages
+server.js
+
+# dev
+.vscode
