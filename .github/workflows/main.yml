@@ -16,7 +16,7 @@ jobs:
       - name: install nix
         uses: cachix/install-nix-action@v13
         with:
-          nix_path: nixpkgs=channel:release-21.05
+          nix_path: nixpkgs=channel:nixos-unstable
       - name: build
         run: |
           nix-build
