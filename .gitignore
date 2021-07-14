@@ -1,15 +1,9 @@
 # tex
 texput.log
 
-# elm
-elm-stuff
-
 # npm
 node-packages
 server.js
 
 # dev
 .vscode
-local/*
-result
-index.html
