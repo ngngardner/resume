@@ -22,6 +22,7 @@ jobs:
           nix-build
           mkdir output
           cp -r result/* output
+          mv output/Main.html output/index.html
       - name: deploy
         uses: JamesIves/github-pages-deploy-action@4.1.4
         with:
