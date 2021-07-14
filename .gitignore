@@ -10,3 +10,4 @@ node-packages
 # dev
 .vscode
 local/*
+result
