@@ -11,3 +11,7 @@ node-packages
 .vscode
 local/*
 result
+
+# generate
+*.dat
+*.pdf
