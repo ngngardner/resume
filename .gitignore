@@ -3,3 +3,7 @@ texput.log
 
 # elm
 elm-stuff
+
+# dev
+.vscode
+local
