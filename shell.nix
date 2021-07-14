@@ -5,6 +5,9 @@ in
 with pkgs;
 pkgs.mkShell {
   buildInputs = [
+    # nix
+    elm2nix
+    
     # tex
     texlive.combined.scheme-full
 
@@ -16,5 +19,6 @@ pkgs.mkShell {
     elmPackages.elm
     elmPackages.elm-test
     elmPackages.elm-format
+    elmPackages.elm-live
   ];
 }

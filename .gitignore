@@ -4,6 +4,9 @@ texput.log
 # elm
 elm-stuff
 
+# npm
+node-packages
+
 # dev
 .vscode
-local
+local/*
