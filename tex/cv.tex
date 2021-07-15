@@ -52,6 +52,12 @@
     \end{tabular*}\vspace{-5pt}
 }
 
+\newcommand{\educationSubheading}[4]{
+      \textbf{#1}\hfill #2 \\
+      \textit{\small#3}\hfill\textit{\small #4} \\
+      \vspace{3pt}
+}
+
 \newcommand{\resumeSubheadingTwo}[2]{
   \vspace{-1pt}\item
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
@@ -82,50 +88,55 @@
   \href{https://github.com/ngngardner}{\faicon{github}}
   \href{https://www.linkedin.com/in/ngngardner/}{\faicon{linkedin}}
   } & \href{https://github.com/ngngardner}{github.com/ngngardner}
+  % \href{https://www.linkedin.com/in/ngngardner/}{linkedin.com/in/ngngardner/}
 \end{tabular*}
 
 
 %-----------EDUCATION-----------------
 \section{Education}
-\resumeSubHeadingListStart
-\resumeSubheading
+\educationSubheading
 {Kennesaw State University}{Kennesaw, GA}
 {Master of Science in Computer Science}{Expected May 2022}
-\resumeSubheading
+\educationSubheading
 {Kennesaw State University}{Kennesaw, GA}
 {Bachelor of Science in Computer Engineering}{Awarded May 2020}
-\resumeSubheading
+\educationSubheading
 {University of North Georgia}{Dahlonega, GA}
 {Associate of Science in Engineering}{Awarded May 2017}
-\resumeSubHeadingListEnd
 
 %
 %--------SKILLS------------
 \section{Skills}
-\resumeSubHeadingListStart
-\item{
-            \textbf{Languages}{: Python, Go, Julia}
-            \hfill
-            \textbf{Database}{: SQL, Key-value store, Document-based}
-      }
-\item{
-            \textbf{Technologies}{: Docker, Git, Linux, Nix}
-      }
-\resumeSubHeadingListEnd
+\textbf{Languages (Strong)}{: Python, Go, Julia}
+\hfill
+\textbf{Technologies}{: Docker, Git, Linux, Nix}
+\vspace{3pt}
+
+\textbf{Languages (Proficient)}{: C, C++, Java}
+\hfill
+\textbf{Environments}{: Github, Tensorflow}
+
 
 %-----------EXPERIENCE-----------------
 \section{Experience}
 \resumeSubHeadingListStart
 
 \resumeSubheading
-{NCR Global Headquarters}{Atlanta, GA}
+{NCR}{Atlanta, GA}
 {Software Engineer Intern}{May 2021 - Present}
 \resumeItemListStart
 \resumeItem
-{Developed machine learning solution and to reduce self-checkout transaction times
+{Constructed a Go retail microservice to allow selling lottery tickets at NCR self-checkout terminals}
+\resumeItem
+{Reduced PostgreSQL database load by caching frequently requested data in Redis}
+\resumeItem
+{Developed a machine learning solution to reduce self-checkout transaction times
   and costs}
 \resumeItem
-{Submitted 2 invention disclosure reports to the patent review board}
+{Helped drive innovation by submitting 2 invention disclosure reports to the patent review board}
+\resumeItem
+{Improved developer productivity by creating scripts to generate code for wrapping business logic with
+  commonly used features such as logging, validation, and tracing}
 \resumeItemListEnd
 
 \resumeSubheading
@@ -135,15 +146,17 @@
 \resumeItem
 {Attended 2 virtual conferences to present research publications}
 \resumeItem
-{Researched deep reinforcement learning efforts for mobile robotics}
+{Bolstered interdisciplinary research at KSU by collaborating with other research labs}
 \resumeItem
-{Proposed solution for efficient sampling of experiences for training
+{Proposed a solution for efficient sampling of experiences for training
   reinforcement learning models}
 \resumeItem
-{Created machine learning application to support rehabilitation of stroke
-  patients who cannot be helped with current methods}
+{Created a machine learning application for rehabilitation of currently unsupported stroke patients}
 \resumeItem
-{Developing machine learning pipeline to bolster myrmecological research based on
+{Expanded a clustering algorithm to more effectively initialize centroids for
+  segmentation of hyperspectral images}
+\resumeItem
+{Developing a machine learning pipeline to support myrmecological research based on
   texture analysis methods}
 \resumeItemListEnd
 
@@ -165,7 +178,7 @@
 \resumeSubHeadingListStart
 
 \resumeSubheading
-{Nutriverify (Patent Pending)}{NCR Global Hackathon - Third Place}
+{Nutriverify (Patent Pending)}{NCR Global Hackathon}
 {\textbf{Summary}: Analyzes nutrition info with computer vision techniques}{Summer 2020}
 \resumeItemListStart
 \resumeItem
@@ -173,20 +186,21 @@
 \resumeItem
 {Worked on a team with a diverse skill set to deliver a vision system demonstration}
 \resumeItem
-{Created Python backend with Flask and OpenCV to analyze images and serve
+{Prototyped Python backend with Flask and OpenCV to analyze images and serve
   extracted information}
 \resumeItemListEnd
 
 \resumeSubheading
 {\href{https://doi.org/10.1109/BIBE50027.2020.00172}{EMG-Based Wrist Movement
-    Preditiction}}
+    Prediction}}
 {\href{https://ieeexplore.ieee.org/servlet/opac?punumber=9287816}{IEEE BIBE 2020}}
 {\textbf{Summary}: Predicts extension or flexion of the wrist to promote stroke patient rehabilitation}{Fall 2020}
 \resumeItemListStart
 \resumeItem
-{Worked with local startup \textit{Motus Nova} and their product Hand Mentor Pro}
+{Cooperated with local startup \textit{Motus Nova} and KSU ECE department}
 \resumeItem
-{Created scripts to collect data using four healthy patients and to label the data}
+{Devised a data collection method and automatically labelled collected data from
+  4 patients}
 \resumeItem
 {Designed an algorithm and deployed to an embedded system to predict the direction of motion in real-time}
 \resumeItemListEnd
@@ -202,7 +216,7 @@
 {Attended 8 hackathons including 5 virtual hackathons}
 \resumeItem
 {Active member of the KSU Apprentice Club, a professional practice club for
-  Comptuer Engineers}
+  Computer Engineers}
 \resumeItemListEnd
 
 
