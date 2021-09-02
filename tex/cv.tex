@@ -40,16 +40,14 @@
 % Custom commands
 \newcommand{\resumeItem}[1]{
   \item\small{
-    #1 \vspace{-2pt}
+    #1 \vspace{-5pt}
   }
 }
 
 \newcommand{\resumeSubheading}[4]{
-  \vspace{-1pt}\item
-    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-      \textbf{#1} & #2 \\
-      \textit{\small#3} & \textit{\small #4} \\
-    \end{tabular*}\vspace{-5pt}
+    \textbf{#1}\hfill #2 \\
+    {\small#3}\hfill\textit{\small #4} \\
+    \vspace{-5pt}
 }
 
 \newcommand{\educationSubheading}[4]{
@@ -72,7 +70,7 @@
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
 \newcommand{\resumeItemListStart}{\begin{itemize}}
-\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-3pt}}
 
 %-------------------------------------------
 %%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -100,48 +98,42 @@
 \educationSubheading
 {Kennesaw State University}{Kennesaw, GA}
 {Bachelor of Science in Computer Engineering}{Awarded May 2020}
-\educationSubheading
-{University of North Georgia}{Dahlonega, GA}
-{Associate of Science in Engineering}{Awarded May 2017}
 
 %
 %--------SKILLS------------
 \section{Skills}
-\textbf{Languages (Strong)}{: Python, Go, Julia}
+\textbf{Languages}{: Python, Go, Julia, C, C++, Java}
 \hfill
 \textbf{Technologies}{: Docker, Git, Linux, Nix}
 \vspace{3pt}
 
-\textbf{Languages (Proficient)}{: C, C++, Java}
-\hfill
-\textbf{Environments}{: Github, Tensorflow}
+\textbf{Other}{: Algorithm Development, Machine Learning, Tensorflow, Flask, Google Cloud Platform, SQL}
 
 
 %-----------EXPERIENCE-----------------
 \section{Experience}
-\resumeSubHeadingListStart
 
 \resumeSubheading
-{NCR}{Atlanta, GA}
-{Software Engineer Intern}{May 2021 - Present}
+{Software Engineer Intern}{Atlanta, GA}
+{NCR}{May 2021 - Present}
 \resumeItemListStart
 \resumeItem
 {Constructed a Go retail microservice to allow selling lottery tickets at NCR self-checkout terminals}
 \resumeItem
-{Reduced PostgreSQL database load by caching frequently requested data in Redis}
+{Reduced PostgreSQL database load by 10\% by caching frequently requested data in Redis}
 \resumeItem
 {Developed a machine learning solution to reduce self-checkout transaction times
   and costs}
 \resumeItem
-{Helped drive innovation by submitting 2 invention disclosure reports to the patent review board}
+{Helped drive innovation by submitting 3 invention disclosure reports to the patent review board}
 \resumeItem
 {Improved developer productivity by creating scripts to generate code for wrapping business logic with
   commonly used features such as logging, validation, and tracing}
 \resumeItemListEnd
 
 \resumeSubheading
-{Kennesaw State University}{Kennesaw, GA}
-{Graduate Research Assistant}{May 2020 - Present}
+{Graduate Research Assistant}{Kennesaw, GA}
+{Kennesaw State University}{May 2020 - Present}
 \resumeItemListStart
 \resumeItem
 {Attended 2 virtual conferences to present research publications}
@@ -153,29 +145,15 @@
 \resumeItem
 {Created a machine learning application for rehabilitation of currently unsupported stroke patients}
 \resumeItem
-{Expanded a clustering algorithm to more effectively initialize centroids for
+{Expanded a clustering algorithm to initialize centroids up to 20\% more effectively for
   segmentation of hyperspectral images}
 \resumeItem
-{Developing a machine learning pipeline to support myrmecological research based on
+{Developing a machine learning pipeline to support ecological research based on
   texture analysis methods}
 \resumeItemListEnd
 
-% \resumeSubheading
-% {NCR Global Headquarters}{Atlanta, GA}
-% {Software Engineer Intern}{June 2020 - August 2020}
-% \resumeItemListStart
-% \resumeItem
-% {TensorFlow is an open source software library for numerical computation using data flow graphs; primarily used for training deep learning models.}
-% \resumeItem
-% {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines, as well as a set of language-specific SDKs for constructing pipelines and runners.}
-% \resumeItemListEnd
-
-\resumeSubHeadingListEnd
-
-
 %-----------PROJECTS-----------------
 \section{Projects}
-\resumeSubHeadingListStart
 
 \resumeSubheading
 {Nutriverify (Patent Pending)}{NCR Global Hackathon}
@@ -205,8 +183,6 @@
 {Designed an algorithm and deployed to an embedded system to predict the direction of motion in real-time}
 \resumeItemListEnd
 
-\resumeSubHeadingListEnd
-
 %-----------PROJECTS-----------------
 \section{Community}
 \resumeItemListStart
@@ -214,9 +190,6 @@
 {Awarded the rank of Eagle Scout by Boy Scouts of America in 2014}
 \resumeItem
 {Attended 8 hackathons including 5 virtual hackathons}
-\resumeItem
-{Active member of the KSU Apprentice Club, a professional practice club for
-  Computer Engineers}
 \resumeItemListEnd
 
 
