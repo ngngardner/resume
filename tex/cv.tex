@@ -11,7 +11,6 @@
 \usepackage{fancyhdr}
 \usepackage{fontawesome}
 
-
 \pagestyle{fancy}
 \fancyhf{} % clear all header and footer fields
 \fancyfoot{}
@@ -36,41 +35,7 @@
   \vspace{-4pt}\scshape\raggedright\large
 }{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
 
-%-------------------------
-% Custom commands
-\newcommand{\resumeItem}[1]{
-  \item\small{
-    #1 \vspace{-5pt}
-  }
-}
-
-\newcommand{\resumeSubheading}[4]{
-    \textbf{#1}\hfill #2 \\
-    {\small#3}\hfill\textit{\small #4} \\
-    \vspace{-5pt}
-}
-
-\newcommand{\educationSubheading}[4]{
-      \textbf{#1}\hfill #2 \\
-      \textit{\small#3}\hfill\textit{\small #4} \\
-      \vspace{3pt}
-}
-
-\newcommand{\resumeSubheadingTwo}[2]{
-  \vspace{-1pt}\item
-    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-      \textbf{#1} & #2
-    \end{tabular*}\vspace{-5pt}
-}
-
-\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
-
-\renewcommand{\labelitemii}{$\circ$}
-
-\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
-\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
-\newcommand{\resumeItemListStart}{\begin{itemize}}
-\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-3pt}}
+\input{commands.tex}
 
 %-------------------------------------------
 %%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -86,11 +51,8 @@
   \href{https://github.com/ngngardner}{\faicon{github}}
   \href{https://www.linkedin.com/in/ngngardner/}{\faicon{linkedin}}
   } & \href{https://github.com/ngngardner}{github.com/ngngardner}
-  % \href{https://www.linkedin.com/in/ngngardner/}{linkedin.com/in/ngngardner/}
 \end{tabular*}
 
-
-%-----------EDUCATION-----------------
 \section{Education}
 \educationSubheading
 {Kennesaw State University}{Kennesaw, GA}
@@ -99,99 +61,18 @@
 {Kennesaw State University}{Kennesaw, GA}
 {Bachelor of Science in Computer Engineering}{Awarded May 2020}
 
-%
-%--------SKILLS------------
 \section{Skills}
-\textbf{Languages}{: Python, Go, Julia, C, C++, Java}
-\hfill
-\textbf{Technologies}{: Docker, Git, Linux, Nix}
-\vspace{3pt}
+\input{sections/skills.tex}
 
-\textbf{Other}{: Algorithm Development, Machine Learning, Tensorflow, Flask, Google Cloud Platform, SQL}
-
-
-%-----------EXPERIENCE-----------------
 \section{Experience}
+\input{sections/experience/ncr_swe_2021.tex}
+\input{sections/experience/ksu_gra_2020.tex}
 
-\resumeSubheading
-{Software Engineer Intern}{Atlanta, GA}
-{NCR}{May 2021 - Present}
-\resumeItemListStart
-\resumeItem
-{Constructed a Go retail microservice to allow selling lottery tickets at NCR self-checkout terminals}
-\resumeItem
-{Reduced PostgreSQL database load by 10\% by caching frequently requested data in Redis}
-\resumeItem
-{Developed a machine learning solution to reduce self-checkout transaction times
-  and costs}
-\resumeItem
-{Helped drive innovation by submitting 3 invention disclosure reports to the patent review board}
-\resumeItem
-{Improved developer productivity by creating scripts to generate code for wrapping business logic with
-  commonly used features such as logging, validation, and tracing}
-\resumeItemListEnd
-
-\resumeSubheading
-{Graduate Research Assistant}{Kennesaw, GA}
-{Kennesaw State University}{May 2020 - Present}
-\resumeItemListStart
-\resumeItem
-{Attended 2 virtual conferences to present research publications}
-\resumeItem
-{Bolstered interdisciplinary research at KSU by collaborating with other research labs}
-\resumeItem
-{Proposed a solution for efficient sampling of experiences for training
-  reinforcement learning models}
-\resumeItem
-{Created a machine learning application for rehabilitation of currently unsupported stroke patients}
-\resumeItem
-{Expanded a clustering algorithm to initialize centroids up to 20\% more effectively for
-  segmentation of hyperspectral images}
-\resumeItem
-{Developing a machine learning pipeline to support ecological research based on
-  texture analysis methods}
-\resumeItemListEnd
-
-%-----------PROJECTS-----------------
 \section{Projects}
+\input{sections/projects/nutriverify.tex}
+\input{sections/projects/ieee_bibe.tex}
 
-\resumeSubheading
-{Nutriverify (Patent Pending)}{NCR Global Hackathon}
-{\textbf{Summary}: Analyzes nutrition info with computer vision techniques}{Summer 2020}
-\resumeItemListStart
-\resumeItem
-{Achieved third place in global hackathon with over 2400 participants}
-\resumeItem
-{Worked on a team with a diverse skill set to deliver a vision system demonstration}
-\resumeItem
-{Prototyped Python backend with Flask and OpenCV to analyze images and serve
-  extracted information}
-\resumeItemListEnd
-
-\resumeSubheading
-{\href{https://doi.org/10.1109/BIBE50027.2020.00172}{EMG-Based Wrist Movement
-    Prediction}}
-{\href{https://ieeexplore.ieee.org/servlet/opac?punumber=9287816}{IEEE BIBE 2020}}
-{\textbf{Summary}: Predicts extension or flexion of the wrist to promote stroke patient rehabilitation}{Fall 2020}
-\resumeItemListStart
-\resumeItem
-{Cooperated with local startup \textit{Motus Nova} and KSU ECE department}
-\resumeItem
-{Devised a data collection method and automatically labelled collected data from
-  4 patients}
-\resumeItem
-{Designed an algorithm and deployed to an embedded system to predict the direction of motion in real-time}
-\resumeItemListEnd
-
-%-----------PROJECTS-----------------
 \section{Community}
-\resumeItemListStart
-\resumeItem
-{Awarded the rank of Eagle Scout by Boy Scouts of America in 2014}
-\resumeItem
-{Attended 8 hackathons including 5 virtual hackathons}
-\resumeItemListEnd
+\input{sections/community.tex}
 
-
-%-------------------------------------------
 \end{document}
