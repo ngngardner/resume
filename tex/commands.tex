@@ -15,7 +15,7 @@
 \newcommand{\educationSubheading}[4]{
     \textbf{#1}\hfill #2 \\
     \textit{\small#3}\hfill\textit{\small #4} \\
-    \vspace{3pt}
+
 }
 
 \newcommand{\resumeSubheadingTwo}[2]{
@@ -23,6 +23,15 @@
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
         \textbf{#1} & #2
     \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\patentApplication}[4]{
+    \textbf{#1}{ by #2} \hfill{#3}, \textit{#4}\newline
+}
+
+\newcommand{\conference}[4]{
+    \textbf{#1}\hfill\textit{#2}\newline
+    {#3}\hfill\textit{#4}\newline
 }
 
 \newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
