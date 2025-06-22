@@ -1,0 +1,51 @@
+name: Update Commit SHA in index.html
+
+on:
+  push:
+    branches: [ main ]
+    paths-ignore:
+      - 'index.html'
+
+jobs:
+  update-commit-sha:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
+
+    - name: Update commit SHA in index.html
+      run: |
+        COMMIT_SHA=$(git rev-parse HEAD)
+        echo "Current commit SHA: $COMMIT_SHA"
+
+        # Update the meta refresh URL
+        sed -i "s|blob/[a-f0-9]\{40\}/bin/main.pdf|blob/$COMMIT_SHA/bin/main.pdf|g" index.html
+
+        # Update the JavaScript redirect URL
+        sed -i "s|blob/[a-f0-9]\{40\}/bin/main.pdf|blob/$COMMIT_SHA/bin/main.pdf|g" index.html
+
+        # Update the fallback link URL
+        sed -i "s|blob/[a-f0-9]\{40\}/bin/main.pdf|blob/$COMMIT_SHA/bin/main.pdf|g" index.html
+
+        echo "Updated index.html with commit SHA: $COMMIT_SHA"
+
+    - name: Check if there are changes
+      id: changes
+      run: |
+        if git diff --quiet index.html; then
+          echo "changed=false" >> $GITHUB_OUTPUT
+        else
+          echo "changed=true" >> $GITHUB_OUTPUT
+        fi
+
+    - name: Commit and push changes
+      if: steps.changes.outputs.changed == 'true'
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git add index.html
+        git commit -m "Update commit SHA in index.html to $(git rev-parse HEAD)"
+        git push
