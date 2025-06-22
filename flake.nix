@@ -1,37 +1,43 @@
 {
-  description = "Resume";
+  description = "My resume";
 
   inputs = {
-    nixpkgs = { url = "github:nixos/nixpkgs/d189bf92f9be23f9b0f6c444f6ae29351bb7125c"; };
-    utils = { url = "github:numtide/flake-utils"; };
+    nixpkgs.url = "github:nixos/nixpkgs/nixos-24.11";
+    std = {
+      url = "github:divnix/std";
+      inputs.nixpkgs.follows = "nixpkgs";
+      inputs.devshell.url = "github:numtide/devshell";
+      inputs.nixago.url = "github:nix-community/nixago";
+    };
   };
 
-  outputs = { self, nixpkgs, utils }:
-    utils.lib.eachDefaultSystem (system:
-      let
-        pkgs = import nixpkgs {
-          inherit system;
-        };
-      in
-      {
-        devShell = pkgs.mkShell
-          {
-            packages = [
-              # tex dev
-              (pkgs.texlive.combine {
-                inherit (pkgs.texlive)
-                  scheme-medium
-                  latexmk
-                  latexindent
-
-                  preprint
-                  titlesec
-                  enumitem
-                  fontawesome
-                  ;
-              })
-            ];
-          };
-      }
-    );
+  outputs = {
+    self,
+    std,
+    nixpkgs,
+    ...
+  } @ inputs:
+    std.growOn
+    {
+      inherit inputs;
+      systems = ["x86_64-linux"];
+      cellsFrom = ./nix;
+      cellBlocks = with std.blockTypes; [
+        (functions "lib")
+        (functions "overlays")
+        (devshells "shells")
+        (runnables "packages")
+        (nixago "configs")
+      ];
+    }
+    {
+      devShells = std.harvest inputs.self [
+        "core"
+        "shells"
+      ];
+      packages = std.harvest inputs.self [
+        "core"
+        "packages"
+      ];
+    };
 }

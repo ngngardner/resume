@@ -1,3 +1,8 @@
-# resume
+# Resume
 
-https://ngngardner.github.io/resume/
+## Build
+
+```sh
+nix develop # enter dev shell
+std //core/packages/resume:build
+```
