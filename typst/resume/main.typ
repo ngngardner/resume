@@ -2,10 +2,8 @@
 
 #show: resume.with(
   author: (
-    firstname: "Noah", lastname: "Gardner", email: "ngardn10@students.kennesaw.com", phone: "", github: "ngngardner", linkedin: "ngngardner", address: "", positions: ("Software Engineer", "Research Scientist"),
-  ), 
-  profile-picture: none,
-  date: datetime.today().display(),
+    firstname: "Noah", lastname: "Gardner", email: "ngngardner@gmail.com", github: "ngngardner", linkedin: "ngngardner", address: "", positions: ("Software Engineer", "Research Scientist"),
+  ), profile-picture: none, date: "June 2025",
 )
 
 = Education
@@ -15,15 +13,14 @@
 )
 
 #resume-entry(
-  title: "Kennesaw State University", location: "Kennesaw, GA", date: "May 2020", description: "Bachelor of Science in Computer Engineering (Magna Cum Laude)",
+  title: "Kennesaw State University", location: "Kennesaw, GA", date: "May 2020", description: "Bachelor of Science in Computer Engineering",
 )
 
 = Skills
 
 #resume-item[
-  - *Languages:* Python, Go, Julia, Nix, LaTeX
-  - *Technologies:* Git, Linux, Docker, Tensorflow, OpenCV, SQL, GCP
-  - *Others:* Machine Learning, API Design, Eagle Scout
+  - *Languages:* Python, Go, Julia, Nix
+  - *Technologies:* Git, Linux, Docker, PyTorch, OpenCV, SQL, GCP
 ]
 
 = Experience
@@ -33,14 +30,19 @@
 )
 
 #resume-item[
-  - Proposed a solution for efficient sampling of experiences for training
-    reinforcement learning models
-  - Created a reinforcement learning environment to allow an agent to learn to make
-    classifications based on EMG data
-  - Expanded a clustering algorithm to initialize centroids up to 20% more
-    effectively for image segmentation
-  - Developed a machine learning pipeline to support ecological research based on
-    texture analysis methods
+  - Engineered a reinforcement learning model to predict wrist motion direction from
+    2-channel sEMG data, achieving ~92% accuracy by combining a Convolutional Neural
+    Network (CNN) for deep feature extraction with an A2C actor-critic agent.
+  - Architected and trained a Deep Q-Network (DQN) for robotic path planning,
+    pioneering the use of Dijkstra's algorithm to generate expert demonstrations
+    which significantly accelerated model convergence.
+  - Developed the novel Iterative Self-Organizing Data Split (ISODS) algorithm to
+    initialize cluster centroids, improving clustering performance for ISODATA and
+    K-Means on benchmark UCI and hyperspectral imaging datasets.
+  - Conducted a comparative study classifying ant species by cuticle texture,
+    demonstrating that deep learning methods achieved higher accuracy than
+    statistical methods. The top model, a Deep Residual Pooling (DRP) network,
+    achieved a 0.92 F1-score.
 ]
 
 #resume-entry(
@@ -48,13 +50,14 @@
 )
 
 #resume-item[
-  - Constructed a Go retail microservice for selling lottery tickets to corner a
-    percentage of the global lottery market
-  - Improved developer productivity by automatically generating decorators for
-    business logic with commonly used features such as logging, validation, caching,
-    and tracing
-  - Submitted a machine learning based invention to reduce self-checkout transaction
-    times and costs
+  - Co-developed a production-bound retail microservice in Go to enable lottery
+    ticket sales at self-checkout (SCO) kiosks, integrating with lottery provider
+    APIs and physical receipt printers.
+  - Improved developer productivity by creating a template-based tool to
+    auto-generate Go decorators for tracing and logging, substantially reducing
+    boilerplate code.
+  - Contributed to a patent-pending system for a Paperless Lottery service, allowing
+    users to digitize and track physical tickets via a mobile application.
 ]
 
 #resume-entry(
@@ -62,12 +65,12 @@
 )
 
 #resume-item[
-  - Created a backend web application for an innovative mobile self-checkout
-    solution
-  - Programmed maintainable and efficient code that impacted new microservice
-    products by serving as a template
-  - Achieved third place in the NCR global hackathon with over 2400 participants
-    with a nutrition application
+  - Developed the complete backend service for a mobile self-checkout solution using
+    Go, the Echo web framework, and PostgreSQL; the application was successfully
+    deployed in NCR's live test store.
+  - Secured 3rd place in a global NCR hackathon (2,400+ participants) for
+    contributions to the patented NutriVerify application, including co-designing
+    the core system diagram.
 ]
 
 #resume-entry(
@@ -75,12 +78,10 @@
 )
 
 #resume-item[
-  - Developed a serial interface from a microcontroller to a motor controller to
-    create an autonomous wandering robot
-  - Improved robot wandering algorithm efficiency by 70% with a key image processing
-    insight
-  - Collaborated with other assistants to create research proposals and receive
-    funding
+  - Improved a robot's wandering algorithm efficiency by 70% by developing an
+    optimized, vision-based obstacle avoidance system using edge detection.
+  - Engineered the robotic platform by integrating a Raspberry Pi camera with a
+    microcontroller and developing the serial interface to the motor controller.
 ]
 
 #resume-entry(
@@ -88,33 +89,69 @@
 )
 
 #resume-item[
-  - Programmed analytics operations system to run on refrigeration control systems
-    data at user-specified intervals
-  - Developed a web-based dashboard for technicians to easily visualize analytics
-    results
-  - Stored data in SQL relational database and cached frequently requested data
+  - Engineered a Python scheduling service that monitored an Azure PostgreSQL
+    database for tasks, launching background threads to run analytics on
+    refrigeration time series data (temperature, power).
+  - Designed and developed a web dashboard to present analytics results, enabling
+    technicians to visualize key performance metrics from refrigeration systems.
+  - Implemented a Redis caching layer for frequently requested data to improve
+    dashboard performance and reduce database load.
 ]
 
-= Research
-
-#resume-item[
-  #cite(<gardner_definition_2022>, supplement: none)
-  #cite(<gardner_isods_2021>, supplement: none)
-  #cite(<gardner_emg_2020>, supplement: none)
-]
-
-#bibliography("papers.bib", style: "ieee", title: none)
+#pagebreak()
 
 = Patent Applications
 
 #resume-entry(
-  title: "NutriVerify", location: "", date: "September 2020", description: "NCR",
+  title: "METHODS AND A SYSTEM OF ITEM NUTRITION INFORMATION PROCESSING", date: "September 2020", location: "NCR, Atlanta, GA",
 )
 
 #resume-entry(
-  title: "Paperless Lottery Tickets", location: "", date: "September 2021", description: "NCR",
+  title: "PAPERLESS TICKET MANAGEMENT SERVICE", date: "September 2021", location: "NCR, Atlanta, GA",
 )
 
 #resume-entry(
-  title: "Targeted Gamified Ecommerce Service", location: "", date: "November 2021", description: "NCR",
+  title: "TARGETED GAMIFIED ECOMMERCE SERVICE", date: "November 2021", location: "NCR, Atlanta, GA",
+)
+
+#resume-entry(
+  title: "DELAYED ITEM TRANSACTION PROCESSING", date: "December 2022", location: "NCR, Atlanta, GA",
+)
+
+#resume-entry(
+  title: "ITEM SIMILARITY ANALYSIS FOR THEFT DETECTION", date: "June 2023", location: "NCR, Atlanta, GA",
+)
+
+#resume-entry(
+  title: "IMAGE PROCESSING FOR DISTINGUISHING PRODUCE-RELATED
+                    CHARACTERISTICS AT CHECKOUT", date: "June 2023", location: "NCR, Atlanta, GA",
+)
+
+= Publications
+
+#resume-entry(
+  title: "EMG Based Simultaneous Wrist Motion Prediction Using
+                      Reinforcement Learning", date: "October 2020", location: "KSU, Marrietta, GA",
+)
+
+#resume-entry(
+  title: "ISODS: An ISODATA-Based Initial Centroid Algorithm", date: "March 2021", location: "KSU, Marrietta, GA",
+)
+
+#resume-entry(
+  title: "Reinforcement Learning Agent for Path Planning with Expert Demonstration", date: "June 2022", location: "KSU, Marrietta, GA",
+)
+
+#resume-entry(
+  title: "Investigation of ant cuticle dataset using image texture analysis", date: "June 2022", location: "KSU, Marrietta, GA",
+)
+
+#resume-entry(
+  title: "Definition modeling: literature review and dataset analysis", date: "June 2022", location: "KSU, Marrietta, GA",
+)
+
+= Honors and Awards
+
+#resume-entry(
+  title: "Eagle Scout", date: "August 2014", location: "Boy Scouts of America, Lawrenceville, GA",
 )

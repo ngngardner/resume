@@ -8,6 +8,9 @@ in {
     name = "shell";
     packages = [
       pkgs.typst
+      pkgs.source-sans-pro
+      pkgs.roboto
+      pkgs.font-awesome
     ];
 
     imports = [
@@ -24,5 +27,18 @@ in {
     ];
 
     commands = [];
+    
+    env = [
+      {
+        name = "FONTCONFIG_FILE";
+        value = pkgs.makeFontsConf { 
+          fontDirectories = [ 
+            pkgs.source-sans-pro 
+            pkgs.roboto 
+            pkgs.font-awesome 
+          ]; 
+        };
+      }
+    ];
   };
 }
