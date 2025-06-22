@@ -26,7 +26,27 @@
 = Experience
 
 #resume-entry(
-  title: "Graduate Research Assistant", location: "Kennesaw, GA", date: "May 2020 - July 2022", description: "Kennesaw State University",
+  title: "Software Engineer", location: "Atlanta, GA", date: "June 2022 - Present", description: "NCR Voyix",
+)
+
+#resume-item[
+  - Architected and maintained a cloud-based computer vision service to classify
+    produce at self-checkout kiosks, scaling the system to support over 1,000
+    stores, 10,000 SCOs, and 1 million daily requests.
+  - Developed the core service using Python and FastAPI and engineered the data
+    pipeline with GCP Dataflow to process and save image data.
+  - Trained and deployed computer vision models on GPU-accelerated platforms to
+    deliver real-time predictions.
+  - Established key performance indicators (KPIs) to evaluate model relevance and
+    performance, creating a live dashboard in GCP Monitoring to track production
+    model accuracy and operational health.
+  - Mentored and onboarded new software engineer interns, guiding their project
+    contributions and fostering their technical development through code reviews and
+    regular feedback.
+]
+
+#resume-entry(
+  title: "Graduate Research Assistant", location: "Kennesaw, GA", date: "May 2020 - September 2022", description: "Kennesaw State University",
 )
 
 #resume-item[
@@ -73,6 +93,7 @@
     the core system diagram.
 ]
 
+#pagebreak()
 #resume-entry(
   title: "Research Assistant", location: "Kennesaw, GA", date: "Jan 2019 - May 2020", description: "Kennesaw State University",
 )
@@ -85,20 +106,18 @@
 ]
 
 #resume-entry(
-  title: "Innovation Technologist Intern", location: "Atlanta, GA", date: "May 2019 - August 2019", description: "Emerson",
+  title: "Innovation Technologist Intern", location: "Atlanta, GA", date: "May 2019 - August 2019", description: "Emerson Commercial & Residential Solutions",
 )
 
 #resume-item[
   - Engineered a Python scheduling service that monitored an Azure PostgreSQL
     database for tasks, launching background threads to run analytics on
-    refrigeration time series data (temperature, power).
+    refrigeration time series data (temperature, power, etc.).
   - Designed and developed a web dashboard to present analytics results, enabling
     technicians to visualize key performance metrics from refrigeration systems.
   - Implemented a Redis caching layer for frequently requested data to improve
     dashboard performance and reduce database load.
 ]
-
-#pagebreak()
 
 = Patent Applications
 
@@ -123,31 +142,29 @@
 )
 
 #resume-entry(
-  title: "IMAGE PROCESSING FOR DISTINGUISHING PRODUCE-RELATED
-                    CHARACTERISTICS AT CHECKOUT", date: "June 2023", location: "NCR, Atlanta, GA",
+  title: "IMAGE PROCESSING FOR DISTINGUISHING PRODUCE-RELATED CHARACTER...", date: "June 2023", location: "NCR, Atlanta, GA",
 )
 
 = Publications
 
 #resume-entry(
-  title: "EMG Based Simultaneous Wrist Motion Prediction Using
-                      Reinforcement Learning", date: "October 2020", location: "KSU, Marrietta, GA",
+  title: "EMG Based Simultaneous Wrist Motion Prediction Using Reinforcement Learning", date: "October 2020", location: "KSU, Marietta, GA",
 )
 
 #resume-entry(
-  title: "ISODS: An ISODATA-Based Initial Centroid Algorithm", date: "March 2021", location: "KSU, Marrietta, GA",
+  title: "ISODS: An ISODATA-Based Initial Centroid Algorithm", date: "March 2021", location: "KSU, Marietta, GA",
 )
 
 #resume-entry(
-  title: "Reinforcement Learning Agent for Path Planning with Expert Demonstration", date: "June 2022", location: "KSU, Marrietta, GA",
+  title: "Definition modeling: literature review and dataset analysis", date: "March 2022", location: "KSU, Marietta, GA",
 )
 
 #resume-entry(
-  title: "Investigation of ant cuticle dataset using image texture analysis", date: "June 2022", location: "KSU, Marrietta, GA",
+  title: "Reinforcement Learning Agent for Path Planning with Expert Demonstration", date: "June 2022", location: "KSU, Marietta, GA",
 )
 
 #resume-entry(
-  title: "Definition modeling: literature review and dataset analysis", date: "June 2022", location: "KSU, Marrietta, GA",
+  title: "Investigation of ant cuticle dataset using image texture analysis", date: "September 2022", location: "KSU, Marietta, GA",
 )
 
 = Honors and Awards
