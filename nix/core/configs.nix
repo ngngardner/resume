@@ -38,6 +38,9 @@ in {
           includes = ["*.md"];
         };
       };
+      global = {
+        excludes = ["typst/resume/cache/**/*"];
+      };
     };
   };
 
