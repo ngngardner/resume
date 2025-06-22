@@ -14,7 +14,7 @@ in {
       ];
 
       buildPhase = ''
-        typst compile main.typ
+        typst compile --package-cache-path cache main.typ
       '';
 
       installPhase = ''
