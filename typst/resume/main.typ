@@ -122,49 +122,71 @@
 = Patent Applications
 
 #resume-entry(
-  title: "METHODS AND A SYSTEM OF ITEM NUTRITION INFORMATION PROCESSING", date: "September 2020", location: "NCR, Atlanta, GA",
+  title: [#link(
+      "https://www.lens.org/165-685-722-157-391",
+    )[METHODS AND A SYSTEM OF ITEM NUTRITION INFORMATION PROCESSING]], date: "September 2020", location: "NCR, Atlanta, GA",
 )
 
 #resume-entry(
-  title: "PAPERLESS TICKET MANAGEMENT SERVICE", date: "September 2021", location: "NCR, Atlanta, GA",
+  title: [#link(
+      "https://www.lens.org/167-187-878-805-042",
+    )[PAPERLESS TICKET MANAGEMENT SERVICE]], date: "September 2021", location: "NCR, Atlanta, GA",
 )
 
 #resume-entry(
-  title: "TARGETED GAMIFIED ECOMMERCE SERVICE", date: "November 2021", location: "NCR, Atlanta, GA",
+  title: [#link(
+      "https://www.lens.org/061-010-329-213-274",
+    )[TARGETED GAMIFIED ECOMMERCE SERVICE]], date: "November 2021", location: "NCR, Atlanta, GA",
 )
 
 #resume-entry(
-  title: "DELAYED ITEM TRANSACTION PROCESSING", date: "December 2022", location: "NCR, Atlanta, GA",
+  title: [#link(
+      "https://www.lens.org/142-716-094-431-074",
+    )[DELAYED ITEM TRANSACTION PROCESSING]], date: "December 2022", location: "NCR, Atlanta, GA",
 )
 
 #resume-entry(
-  title: "ITEM SIMILARITY ANALYSIS FOR THEFT DETECTION", date: "June 2023", location: "NCR, Atlanta, GA",
+  title: [#link(
+      "https://www.lens.org/166-936-125-622-005",
+    )[ITEM SIMILARITY ANALYSIS FOR THEFT DETECTION]], date: "June 2023", location: "NCR, Atlanta, GA",
 )
 
 #resume-entry(
-  title: "IMAGE PROCESSING FOR DISTINGUISHING PRODUCE-RELATED CHARACTER...", date: "June 2023", location: "NCR, Atlanta, GA",
+  title: [#link(
+      "https://www.lens.org/043-720-682-247-081",
+    )[IMAGE PROCESSING FOR DISTINGUISHING PRODUCE-RELATED CHARACTERISTICS]], date: "June 2023", location: "NCR, Atlanta, GA",
 )
 
 = Publications
 
 #resume-entry(
-  title: "EMG Based Simultaneous Wrist Motion Prediction Using Reinforcement Learning", date: "October 2020", location: "KSU, Marietta, GA",
+  title: [#link(
+      "https://doi.org/10.1109/bibe50027.2020.00172",
+    )[EMG Based Simultaneous Wrist Motion Prediction Using Reinforcement Learning]], date: "October 2020", location: "KSU, Marietta, GA",
 )
 
 #resume-entry(
-  title: "ISODS: An ISODATA-Based Initial Centroid Algorithm", date: "March 2021", location: "KSU, Marietta, GA",
+  title: [#link(
+      "https://doi.org/10.13140/rg.2.2.15591.11689",
+    )[ISODS: An ISODATA-Based Initial Centroid Algorithm]], date: "March 2021", location: "KSU, Marietta, GA",
 )
 
 #resume-entry(
-  title: "Definition modeling: literature review and dataset analysis", date: "March 2022", location: "KSU, Marietta, GA",
+  title: [#link(
+      "https://doi.org/10.3934/aci.2022005",
+    )[Definition modeling: literature review and dataset analysis]], date: "March 2022", location: "KSU, Marietta, GA",
 )
 
 #resume-entry(
-  title: "Reinforcement Learning Agent for Path Planning with Expert Demonstration", date: "June 2022", location: "KSU, Marietta, GA",
+  title: [#link(
+      "https://doi.org/10.1109/compsac54236.2022.00158",
+    )[Reinforcement Learning Agent for Path Planning with Expert Demonstration]], date: "June 2022", location: "KSU, Marietta, GA",
 )
 
 #resume-entry(
-  title: "Investigation of ant cuticle dataset using image texture analysis", date: "September 2022", location: "KSU, Marietta, GA",
+  title: [#link(
+      "https://doi.org/10.3934/aci.2022008",
+    )[Investigation of ant cuticle dataset using image texture analysis]], date: "September 2022", location: "KSU, Marietta, GA",
 )
 
 = Honors and Awards
