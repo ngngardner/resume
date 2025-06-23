@@ -9,6 +9,7 @@ cp result/share/resume/main.pdf bin/main.pdf
 ```
 
 ## Dev
+
 ```sh
 nix develop # enter dev shell
 cd typst/resume

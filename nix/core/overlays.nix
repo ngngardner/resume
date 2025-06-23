@@ -17,7 +17,7 @@ in {
       ];
 
       buildPhase = ''
-        export FONTCONFIG_FILE=${final.makeFontsConf { fontDirectories = [ final.source-sans-pro final.roboto final.font-awesome ]; }}
+        export FONTCONFIG_FILE=${final.makeFontsConf {fontDirectories = [final.source-sans-pro final.roboto final.font-awesome];}}
         typst compile --package-cache-path cache main.typ
       '';
 
